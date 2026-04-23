@@ -6,10 +6,7 @@
     <Grid Margin="30" ColumnDefinitions="2*,3*">
 
         <!-- 🔵 ЛІВА ЧАСТИНА (КАЛЕНДАР) -->
-        <Border Background="#f1f5f9"
-                CornerRadius="20"
-                Padding="20"
-                Margin="10">
+       
 
             <StackPanel Spacing="15">
 
@@ -28,15 +25,10 @@
                            FontWeight="SemiBold"/>
 
             </StackPanel>
-        </Border>
+        
 
         <!-- 🟢 ПРАВА ЧАСТИНА (ФОРМА) -->
-        <Border Grid.Column="1"
-                Background="#ffffff"
-                CornerRadius="20"
-                Padding="25"
-                Margin="10"
-                BoxShadow="0 5 20 #00000020">
+        <Border Grid.Column="1">
 
             <StackPanel Spacing="12">
 

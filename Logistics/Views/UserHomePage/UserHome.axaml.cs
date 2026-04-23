@@ -29,11 +29,7 @@ public partial class UserHome : UserControl
         MainContent.IsVisible = false;
         ContentArea.Content = new SettingsPage();
     }
-    private void OpenInternational(object? sender, RoutedEventArgs e)
-    {
-        MainContent.IsVisible = false;
-        ContentArea.Content = new InternationalPage();
-    }
+    
 
     private void OpenBack(object? sender, RoutedEventArgs e)
     {

@@ -7,12 +7,6 @@
         <FluentTheme />
         <StyleInclude Source="/Resources/Styles.axaml"/>
     </Application.Styles>
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceInclude Source="/Resources/Lang.ua.axaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
+   
 
 </Application>
