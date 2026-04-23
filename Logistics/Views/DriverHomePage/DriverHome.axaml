@@ -14,7 +14,8 @@
             <Button Click="OpenCalendar" Content="📅 Календар"/>
             <Button Classes="green" Click="OpenRoutes" Content="🗺️ Маршрути"/>
             <Button Click="OpenContact" Content="📞 Контакти"/>
-            <Button  Classes="green" Content="🔙 Назад" Click="GoBack"/>
+            <Button Classes="green" Click="OpenSettings" Content="⚙️ Налаштування"/>
+            <Button   Content="🔙 Назад" Click="GoBack"/>
         </StackPanel>
 
         <!-- ПРАВА ЧАСТИНА -->

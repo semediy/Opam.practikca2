@@ -61,6 +61,8 @@
         <!-- Кнопка -->
         <Button Content="Зареєструватися"
                 Click="RegisterClick"/>
+        <Button Content="Увійти"
+                Click="LoginClick"/>
 
         <CheckBox Content="Погоджуюся з умовами"
                   FontSize="12"

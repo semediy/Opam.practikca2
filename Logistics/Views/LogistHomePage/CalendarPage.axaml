@@ -2,10 +2,12 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:Class="Logistics.Views.LogistHomePage.CalendarPage">
+    
 
     <Grid Margin="30" ColumnDefinitions="2*,3*">
+        
 
-        <!-- 🔵 ЛІВА ЧАСТИНА (КАЛЕНДАР) -->
+        <!-- ЛІВА ЧАСТИНА (КАЛЕНДАР) -->
        
 
             <StackPanel Spacing="15">
@@ -27,7 +29,7 @@
             </StackPanel>
         
 
-        <!-- 🟢 ПРАВА ЧАСТИНА (ФОРМА) -->
+        <!-- ПРАВА ЧАСТИНА -->
         <Border Grid.Column="1">
 
             <StackPanel Spacing="12">
@@ -66,7 +68,7 @@
                         Padding="10"
                         HorizontalAlignment="Left">
 
-                    <!-- ✨ Hover анімація -->
+                   
                     <Button.Styles>
                         <Style Selector="Button:pointerover">
                             <Setter Property="Opacity" Value="0.85"/>
@@ -83,7 +85,7 @@
             </StackPanel>
         </Border>
 
-        <!-- 🚗 ДЕКОР -->
+       
         <Image Source="avares://Logistics/Assets/cars.png"
                HorizontalAlignment="Right"
                VerticalAlignment="Bottom"

@@ -4,7 +4,7 @@
 
     <Grid Margin="30">
 
-        <!-- ОСНОВНА КАРТОЧКА -->
+       
         <Border 
                 CornerRadius="20"
                 Padding="25"
@@ -12,7 +12,7 @@
 
             <StackPanel Spacing="20">
 
-                <!-- 🔷 ЗАГОЛОВОК -->
+              
                 <TextBlock Text="⚙️ Налаштування"
                            FontSize="22"
                            FontWeight="Bold"/>
@@ -20,7 +20,7 @@
                 <TextBlock Text="Оберіть тему інтерфейсу"
                            Opacity="0.6"/>
 
-                <!-- 🔘 ВИБІР ТЕМИ -->
+              
                 <StackPanel Orientation="Horizontal"
                             Spacing="15">
 
@@ -72,7 +72,7 @@
 
                 </StackPanel>
 
-                <!-- 📌 ДОДАТКОВИЙ БЛОК -->
+                <!--   БЛОК -->
                 <Border 
                         CornerRadius="15"
                         Padding="15">

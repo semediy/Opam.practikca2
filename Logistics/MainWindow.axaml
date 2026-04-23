@@ -2,10 +2,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="Logistics.MainWindow"
         Title="Logistics System"
-        Width="1200"
-        Height="700"
-        MinWidth="900"
-        MinHeight="600">
+        Width="900"
+        Height="600"
+    
+        MinWidth="1300"
+        MinHeight="500">
     
 
     <Grid>

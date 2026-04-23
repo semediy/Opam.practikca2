@@ -77,12 +77,12 @@
 
             </Grid>
 
-            <!-- 🔵 КОНТЕНТ СТОРІНОК -->
+           
             <ContentControl x:Name="ContentArea"/>
 
         </Grid>
 
-            <!-- 🚗 ДЕКОР -->
+           
             <Image Source="avares://Logistics/Assets/cars.png"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Bottom"
@@ -91,7 +91,6 @@
                    Opacity="0.15"
                    IsHitTestVisible="False"/>
     </Grid>
-          <!-- КОНТЕНТ -->
-      
+         
 
 </UserControl>

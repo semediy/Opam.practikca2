@@ -18,7 +18,7 @@ public partial class RegisterPage : UserControl
         InitializeComponent();
     }
 
-    // 📱 Маска телефону
+    //  Маска телефону
     private void PhoneChanged(object? sender, TextChangedEventArgs e)
     {
         if (PhoneBox.Text == null) return;
@@ -46,7 +46,7 @@ public partial class RegisterPage : UserControl
         PhoneBox.CaretIndex = PhoneBox.Text.Length;
     }
 
-    // 🎭 Перемикання ролей
+    //  Перемикання ролей
     private void RoleChanged(object? sender, RoutedEventArgs e)
     {
         LogistPanel.IsVisible = Logist.IsChecked == true;
@@ -55,7 +55,7 @@ public partial class RegisterPage : UserControl
         AdminPanel.IsVisible = Admin.IsChecked == true;
     }
 
-    // 💾 РЕЄСТРАЦІЯ
+    // РЕЄСТРАЦІЯ
     private void RegisterClick(object? sender, RoutedEventArgs e)
     {
         string login = LoginBox.Text ?? "";
@@ -96,7 +96,7 @@ public partial class RegisterPage : UserControl
 
         ShowInfo("Реєстрація успішна!", false);
     }
-    // 📂 ЗАВАНТАЖЕННЯ
+    // ЗАВАНТАЖЕННЯ
     private List<Users> LoadUsers()
     {
         if (!File.Exists(FilePath))
@@ -106,7 +106,7 @@ public partial class RegisterPage : UserControl
         return JsonSerializer.Deserialize<List<Users>>(json) ?? new List<Users>();
     }
 
-    // 💾 ЗБЕРЕЖЕННЯ
+    // ЗБЕРЕЖЕННЯ
     private void SaveUsers(List<Users> users)
     {
         var json = JsonSerializer.Serialize(users, new JsonSerializerOptions
@@ -117,7 +117,7 @@ public partial class RegisterPage : UserControl
         File.WriteAllText(FilePath, json);
     }
 
-    // 🪟 Повідомлення
+    // Повідомлення
    private async void ShowMessage(string text)
    {
        var window = this.VisualRoot as Window;
@@ -144,5 +144,11 @@ public partial class RegisterPage : UserControl
        InfoText.Text = text;
        InfoText.Foreground = isError ? Avalonia.Media.Brushes.Red : Avalonia.Media.Brushes.Green;
        InfoText.IsVisible = true;
+   }
+   private void LoginClick(object? sender, RoutedEventArgs e)
+   {
+      
+           Content = new LoginPage();
+       
    }
 }

@@ -6,7 +6,7 @@
 
         <!-- ПОШУК -->
         <TextBox Width="260"
-                 PlaceholderText="Пошук маршруту"
+                 Watermark="Пошук маршруту"
                  Padding="8"/>
 
         <Border CornerRadius="12"
@@ -16,106 +16,94 @@
             <StackPanel>
 
                 <!-- HEADER -->
-                <Grid ColumnDefinitions="3*,3*,3*,2*">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                        <ColumnDefinition Width="1*" MinWidth="100"/>
+                    </Grid.ColumnDefinitions>
+
                     <TextBlock Text="Маршрут" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="1" Text="Міста" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="2" Text="Стоянки" FontWeight="Bold"/>
-                    <TextBlock Grid.Column="3" Text="Карта" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="Міста/Стоянки" FontWeight="Bold"/>
+                   
+                    <TextBlock Grid.Column="2" Text="Карта" FontWeight="Bold"/>
                 </Grid>
 
-                <Border Height="1" Background="#ccc" Margin="0,5"/>
-
-                <ScrollViewer Height="350">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
 
                     <StackPanel Spacing="10">
 
-                        <!-- 🔹 ROW -->
+                       
                         <Expander>
 
-                            <!-- КОРОТКИЙ ВИД -->
+                           
                             <Expander.Header>
-                                <Grid ColumnDefinitions="3*,3*,3*,2*">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                                        <ColumnDefinition Width="2*" MinWidth="150"/>
+                                        <ColumnDefinition Width="1*" MinWidth="100"/>
+                                    </Grid.ColumnDefinitions>
 
                                     <TextBlock Text="Київ → Львів"/>
                                     <TextBlock Grid.Column="1" Text="Житомир, Рівне"/>
                                     <TextBlock Grid.Column="2" Text="OKKO, WOG"/>
-
-                                    <!-- КНОПКА-КАРТА -->
-                                    <Border Grid.Column="3"
-                                            Height="50"
-                                            Background="#e5e7eb"
-                                            CornerRadius="6"
-                                            Cursor="Hand">
-
-                                        <TextBlock Text="Відкрити"
-                                                   HorizontalAlignment="Center"
-                                                   VerticalAlignment="Center"
-                                                   Opacity="0.7"/>
-                                    </Border>
-
                                 </Grid>
                             </Expander.Header>
 
-                            <!-- 🔽 РОЗГОРНУТА "КАРТА" -->
-                            <Border Margin="10"
-                                    Padding="10"
-                                    Background="#f3f4f6"
-                                    CornerRadius="10">
+                            <Grid Height="120">
 
-                                <Canvas Height="120">
+                                <!-- ЛІНІЯ -->
+                                <Border Height="3"
+                                        Background="Black"
+                                        VerticalAlignment="Center"
+                                        Margin="40,0,40,20"/>
 
-                                    <!-- ЛІНІЯ -->
-                                    <Line StartPoint="20,60"
-                                          EndPoint="400,60"
-                                          Stroke="Black"
-                                          StrokeThickness="3"/>
+                                <!-- ТОЧКИ -->
+                                <Grid VerticalAlignment="Center">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
 
-                                    <!-- ТОЧКИ -->
-                                    <!-- Початок -->
-                                    <Ellipse Width="10" Height="10"
-                                             Fill="Green"
-                                             Canvas.Left="20"
-                                             Canvas.Top="55"/>
-                                    <TextBlock Text="Київ"
-                                               Canvas.Left="10"
-                                               Canvas.Top="70"/>
+                                    <!-- МІСТА -->
+                                    <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                                        <Ellipse Width="10" Height="10" Fill="Green"/>
+                                        <TextBlock Text="Київ" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
 
-                                    <!-- СТОЯНКА -->
-                                    <Ellipse Width="10" Height="10"
-                                             Fill="Orange"
-                                             Canvas.Left="150"
-                                             Canvas.Top="55"/>
-                                    <TextBlock Text="Житомир"
-                                               Canvas.Left="130"
-                                               Canvas.Top="70"/>
+                                   
+                                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                                        <Ellipse Width="10" Height="10" Fill="Orange"/>
+                                        <TextBlock Text="Житомир" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
 
-                                    <!-- СТОЯНКА -->
-                                    <Ellipse Width="10" Height="10"
-                                             Fill="Orange"
-                                             Canvas.Left="270"
-                                             Canvas.Top="55"/>
-                                    <TextBlock Text="Рівне"
-                                               Canvas.Left="255"
-                                               Canvas.Top="70"/>
+                                   
+                                    <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                                        <Ellipse Width="10" Height="10" Fill="Orange"/>
+                                        <TextBlock Text="Рівне" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
 
-                                    <!-- КІНЕЦЬ -->
-                                    <Ellipse Width="10" Height="10"
-                                             Fill="Red"
-                                             Canvas.Left="400"
-                                             Canvas.Top="55"/>
-                                    <TextBlock Text="Львів"
-                                               Canvas.Left="380"
-                                               Canvas.Top="70"/>
+                                    
+                                    <StackPanel Grid.Column="3" HorizontalAlignment="Center">
+                                        <Ellipse Width="10" Height="10" Fill="Red"/>
+                                        <TextBlock Text="Львів" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
+                                </Grid>
 
-                                    <!-- ДОВЖИНА -->
-                                    <TextBlock Text="~540 км"
-                                               FontWeight="Bold"
-                                               Canvas.Left="190"
-                                               Canvas.Top="30"/>
+                                <!-- ДОВЖИНА -->
+                                <TextBlock Text="~540 км"
+                                           FontWeight="Bold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Top"
+                                           Margin="0,10,0,0"/>
+                            </Grid>
 
-                                </Canvas>
-
-                            </Border>
+                           
 
                         </Expander>
 

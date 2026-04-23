@@ -45,7 +45,7 @@
             <!-- СТОРІНКИ -->
             <ContentControl x:Name="ContentArea"/>
 
-            <!-- ДЕКОР -->
+           
             <Image Source="avares://Logistics/Assets/cars.png"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Bottom"

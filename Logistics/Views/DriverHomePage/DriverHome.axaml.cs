@@ -20,7 +20,7 @@ public partial class DriverHome : UserControl
     private void OpenRoutes(object? sender, RoutedEventArgs e)
     {
         MainContent.IsVisible = false;
-        ContentArea.Content = new AvailableRoutes();
+        ContentArea.Content = new RoutesPage();
     }
 
     private void OpenContact(object? sender, RoutedEventArgs e)
@@ -33,5 +33,10 @@ public partial class DriverHome : UserControl
     {
         ContentArea.Content = null;
         MainContent.IsVisible = true;
+    }
+    private void OpenSettings(object? sender, RoutedEventArgs e)
+    {
+        MainContent.IsVisible = false;
+        ContentArea.Content = new SettingsPage();
     }
 }
