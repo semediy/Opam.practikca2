@@ -1,0 +1,130 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.LogistHomePage.RoutesPage">
+
+    <StackPanel Margin="20" Spacing="12">
+
+        <!-- ПОШУК -->
+        <TextBox Width="260"
+                 PlaceholderText="Пошук маршруту"
+                 Padding="8"/>
+
+        <Border CornerRadius="12"
+                Padding="10"
+                Background="{DynamicResource ThemeBackgroundBrush}">
+
+            <StackPanel>
+
+                <!-- HEADER -->
+                <Grid ColumnDefinitions="3*,3*,3*,2*">
+                    <TextBlock Text="Маршрут" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="Міста" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="2" Text="Стоянки" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="3" Text="Карта" FontWeight="Bold"/>
+                </Grid>
+
+                <Border Height="1" Background="#ccc" Margin="0,5"/>
+
+                <ScrollViewer Height="350">
+
+                    <StackPanel Spacing="10">
+
+                        <!-- 🔹 ROW -->
+                        <Expander>
+
+                            <!-- КОРОТКИЙ ВИД -->
+                            <Expander.Header>
+                                <Grid ColumnDefinitions="3*,3*,3*,2*">
+
+                                    <TextBlock Text="Київ → Львів"/>
+                                    <TextBlock Grid.Column="1" Text="Житомир, Рівне"/>
+                                    <TextBlock Grid.Column="2" Text="OKKO, WOG"/>
+
+                                    <!-- КНОПКА-КАРТА -->
+                                    <Border Grid.Column="3"
+                                            Height="50"
+                                            Background="#e5e7eb"
+                                            CornerRadius="6"
+                                            Cursor="Hand">
+
+                                        <TextBlock Text="Відкрити"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   Opacity="0.7"/>
+                                    </Border>
+
+                                </Grid>
+                            </Expander.Header>
+
+                            <!-- 🔽 РОЗГОРНУТА "КАРТА" -->
+                            <Border Margin="10"
+                                    Padding="10"
+                                    Background="#f3f4f6"
+                                    CornerRadius="10">
+
+                                <Canvas Height="120">
+
+                                    <!-- ЛІНІЯ -->
+                                    <Line StartPoint="20,60"
+                                          EndPoint="400,60"
+                                          Stroke="Black"
+                                          StrokeThickness="3"/>
+
+                                    <!-- ТОЧКИ -->
+                                    <!-- Початок -->
+                                    <Ellipse Width="10" Height="10"
+                                             Fill="Green"
+                                             Canvas.Left="20"
+                                             Canvas.Top="55"/>
+                                    <TextBlock Text="Київ"
+                                               Canvas.Left="10"
+                                               Canvas.Top="70"/>
+
+                                    <!-- СТОЯНКА -->
+                                    <Ellipse Width="10" Height="10"
+                                             Fill="Orange"
+                                             Canvas.Left="150"
+                                             Canvas.Top="55"/>
+                                    <TextBlock Text="Житомир"
+                                               Canvas.Left="130"
+                                               Canvas.Top="70"/>
+
+                                    <!-- СТОЯНКА -->
+                                    <Ellipse Width="10" Height="10"
+                                             Fill="Orange"
+                                             Canvas.Left="270"
+                                             Canvas.Top="55"/>
+                                    <TextBlock Text="Рівне"
+                                               Canvas.Left="255"
+                                               Canvas.Top="70"/>
+
+                                    <!-- КІНЕЦЬ -->
+                                    <Ellipse Width="10" Height="10"
+                                             Fill="Red"
+                                             Canvas.Left="400"
+                                             Canvas.Top="55"/>
+                                    <TextBlock Text="Львів"
+                                               Canvas.Left="380"
+                                               Canvas.Top="70"/>
+
+                                    <!-- ДОВЖИНА -->
+                                    <TextBlock Text="~540 км"
+                                               FontWeight="Bold"
+                                               Canvas.Left="190"
+                                               Canvas.Top="30"/>
+
+                                </Canvas>
+
+                            </Border>
+
+                        </Expander>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </StackPanel>
+        </Border>
+
+    </StackPanel>
+</UserControl>

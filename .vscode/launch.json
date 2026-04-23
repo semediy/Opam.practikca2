@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Logistics/bin/Debug/net8.0/Logistics",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            // ДОДАЙТЕ ЦІ РЯДКИ НИЖЧЕ:
+            "env": {
+                "DOTNET_ROOT": "/usr/share/dotnet"
+            }
+        }
+    ]
+}

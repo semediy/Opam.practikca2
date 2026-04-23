@@ -1,0 +1,73 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.RegisterPage">
+
+    <StackPanel Margin="30" Spacing="10">
+
+        <TextBlock Text="Реєстрація" FontSize="24"/>
+
+        <!-- ПІБ -->
+        <TextBox x:Name="LoginBox"
+                 PlaceholderText="ПІБ"/>
+
+        <!-- Телефон -->
+        <TextBox x:Name="PhoneBox"
+                 PlaceholderText="+380 (__) ___-__-__"
+                 TextChanged="PhoneChanged"/>
+
+        <!-- Пароль -->
+        <TextBox x:Name="PasswordBox"
+                 PasswordChar="●"
+                 PlaceholderText="Пароль"/>
+
+        <!-- Ролі -->
+        <RadioButton x:Name="Logist"
+                     Content="Логіст"
+                     GroupName="role"
+                     IsChecked="True"
+                     IsCheckedChanged="RoleChanged"/>
+
+        <RadioButton x:Name="Driver"
+                     Content="Водій"
+                     GroupName="role"
+                     IsCheckedChanged="RoleChanged"/>
+
+        <RadioButton x:Name="User"
+                     Content="Користувач"
+                     GroupName="role"
+                     IsCheckedChanged="RoleChanged"/>
+
+        <RadioButton x:Name="Admin"
+                     Content="Адмін"
+                     GroupName="role"
+                     IsCheckedChanged="RoleChanged"/>
+
+        <!-- Панелі -->
+        <StackPanel x:Name="LogistPanel" IsVisible="True">
+            <CheckBox Content="Міжнародні перевезення"/>
+        </StackPanel>
+
+        <StackPanel x:Name="DriverPanel" IsVisible="False">
+            <CheckBox Content="B"/>
+            <CheckBox Content="C"/>
+            <CheckBox Content="C1"/>
+            <CheckBox Content="BE"/>
+            <CheckBox Content="CE"/>
+        </StackPanel>
+
+        <StackPanel x:Name="UserPanel" IsVisible="False"/>
+        <StackPanel x:Name="AdminPanel" IsVisible="False"/>
+
+        <!-- Кнопка -->
+        <Button Content="Зареєструватися"
+                Click="RegisterClick"/>
+
+        <CheckBox Content="Погоджуюся з умовами"
+                  FontSize="12"
+                  Foreground="#64748b"/>
+        <TextBlock x:Name="InfoText"
+                   Foreground="Green"
+                   IsVisible="False"/>
+
+    </StackPanel>
+</UserControl>

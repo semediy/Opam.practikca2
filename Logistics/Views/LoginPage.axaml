@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.LoginPage">
+
+    <StackPanel Margin="40" Spacing="10">
+
+        <TextBlock Text="Вхід" FontSize="24"/>
+
+        <TextBox x:Name="LoginBox" PlaceholderText="Логін"/>
+
+        <TextBox x:Name="PasswordBox"
+                 PasswordChar="●"
+                 PlaceholderText="Пароль"/>
+
+        <!-- Повідомлення -->
+        <TextBlock x:Name="ErrorText"
+                   Foreground="Red"
+                   IsVisible="False"/>
+
+        <Button Content="Увійти"
+                Click="LoginClick"/>
+
+    </StackPanel>
+</UserControl>

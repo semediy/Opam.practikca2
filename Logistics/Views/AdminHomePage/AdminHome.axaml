@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.AdminHomePage.AdminHome">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ЛІВА ПАНЕЛЬ -->
+        <StackPanel Grid.Column="0" Spacing="10" Margin="10">
+
+            <Button Classes="green" Click="OpenChange" Content= "🛠️ Редагування"/>
+            <Button Click="OpenUser" Content="🙍‍♂️ Вхід від користувача"/>
+            <Button Classes="green" Click="OpenLogist" Content="💻 Вхід від логіста"/>
+            <Button Click="OpenDrivers" Content="🚚 Вхід від водія"/>
+            <Button Classes="green" Click="OpenSettings" Content="⚙️ Налаштування"/>
+
+            <Button Content="🔙 Назад"
+                    Click="GoBack"/>
+        </StackPanel>
+
+        <!-- ПРАВА ЧАСТИНА -->
+        <Grid Grid.Column="1">
+
+            <Grid x:Name="MainContent">
+
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+
+                    <TextBlock Text="🛠 Адмін панель"
+                               FontSize="24"
+                               FontWeight="Bold"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <ContentControl x:Name="ContentArea"/>
+
+        </Grid>
+    </Grid>
+
+</UserControl>

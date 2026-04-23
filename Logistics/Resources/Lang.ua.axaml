@@ -1,0 +1,16 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <x:String x:Key="LogisticsText">Логістична система</x:String>
+    <x:String x:Key="SettingsText">Налаштування</x:String>
+    <x:String x:Key="ThemeText">Тема</x:String>
+    <x:String x:Key="LanguageText">Мова</x:String>
+
+    <x:String x:Key="ContactsButtonText">Контакти логістів</x:String>
+    <x:String x:Key="EditButtonText">Редагування</x:String>
+
+    <x:String x:Key="LogistLoginText">Вхід логіста</x:String>
+    <x:String x:Key="DriverLoginText">Вхід водія</x:String>
+    <x:String x:Key="UserLoginText">Вхід користувача</x:String>
+
+</ResourceDictionary>

@@ -1,0 +1,73 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Styles.Resources>
+    
+    <ControlTemplate x:Key="GradientButtonTemplate" TargetType="Button">
+      <Border CornerRadius="14"
+              Background="{TemplateBinding Background}"
+              BorderBrush="#00000022"
+              BorderThickness="1"
+              Padding="0">
+        <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center"/>
+      </Border>
+    </ControlTemplate> 
+    
+    <SolidColorBrush x:Key="SecondaryBrush" Color="#7c3aed"/>
+    <SolidColorBrush x:Key="SuccessBrush" Color="#16a34a"/>
+    <SolidColorBrush x:Key="DangerBrush" Color="#dc2626"/>
+    <Color x:Key="BlueStart">#0033FF</Color>
+    <Color x:Key="BlueEnd">#99CCFF</Color>
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource BlueStart}"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource BlueEnd}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#F8FAFC"/>
+    <SolidColorBrush x:Key="CardBrush" Color="White"/>
+    <Color x:Key="ButClick"> #FFADFF2F </Color>
+    <x:Double x:Key="FontSizeNormal">15</x:Double>
+  </Styles.Resources>
+ 
+  <Style Selector="Button">
+    <Setter Property="Padding" Value="14,8"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+    <Setter Property="FontSize" Value="{StaticResource FontSizeNormal}"/>
+  </Style>
+  
+  <Style Selector="Button.green">
+    <Setter Property="Padding" Value="14,8"/>
+    <Setter Property="Foreground" Value="{StaticResource ButClick}"/>
+    <Setter Property="Background" Value="{StaticResource SuccessBrush}"/>
+    <Setter Property="FontSize" Value="{StaticResource FontSizeNormal}"/>
+  </Style>
+  
+  <Style Selector="Button.gradient">
+    <Setter Property="Padding" Value="18,10"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="FontSize" Value="{StaticResource FontSizeNormal}"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+    <Setter Property="Background">
+      <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,0%">
+        <GradientStop Color="{StaticResource BlueStart}" Offset="0"/>
+        <GradientStop Color="{StaticResource  BlueEnd}" Offset="1"/>
+      </LinearGradientBrush>
+    </Setter>
+  </Style>
+  <Style Selector="Button.gradient:pointerover">
+    <Setter Property="RenderTransform">
+      <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+    </Setter>
+  </Style>
+  <Style Selector="Button.gradient:pressed">
+    <Setter Property="RenderTransform">
+      <ScaleTransform ScaleX="0.97" ScaleY="0.97"/>
+    </Setter>
+  </Style>
+  
+  <Style Selector="Border.card">
+    <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+    <Setter Property="CornerRadius" Value="16"/>
+    <Setter Property="Padding" Value="20"/>
+    <Setter Property="BorderBrush" Value="#00000010"/>
+    <Setter Property="BorderThickness" Value="1"/>
+  </Style>
+</Styles>

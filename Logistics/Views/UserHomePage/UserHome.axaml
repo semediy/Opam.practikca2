@@ -1,0 +1,98 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.UserHomePage.UserHome">
+
+    <Grid>
+
+        <!-- РОЗМІТКА -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ЛІВА ПАНЕЛЬ -->
+        <StackPanel Grid.Column="0"
+                    Spacing="10"
+                    Margin="10">
+
+            <Button x:Name="Contact"
+                Click="OpenContact">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="📅"/>
+                    <TextBlock Text="Контакти"/>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="Settings"
+                Classes="green" Click="OpenSettings">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="⚙️"/>
+                    <TextBlock Text="Налаштування"/>
+                </StackPanel>
+            </Button>
+            
+            <Button  x:Name="Back"
+                Click="OpenBack">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="🔙"/>
+                    <TextBlock Text="Назад"/>
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+
+        <!-- 🔥 ЦЕНТР -->
+        <Grid Grid.Column="1">
+
+            <!-- 🟢 ГОЛОВНИЙ КОНТЕНТ -->
+            <Grid x:Name="MainContent">
+
+               
+
+                    <StackPanel Spacing="15">
+
+                        <TextBlock Text="🚚 Про програму"
+                                   FontSize="26"
+                                   FontWeight="Bold"
+                                   TextAlignment="Center"/>
+
+                        <TextBlock TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   FontSize="16"
+                                   Opacity="0.8"
+                                   Text="Ця система логістики призначена для зручного управління перевезеннями."/>
+
+                        <StackPanel Spacing="8">
+                            <TextBlock Text="✔ Перегляд маршрутів"/>
+                            <TextBlock Text="✔ Інформація про водіїв"/>
+                            <TextBlock Text="✔ Відстеження перевезень"/>
+                            <TextBlock Text="✔ Швидкий зв'язок з логістом"/>
+                        </StackPanel>
+
+                        <TextBlock Text="💡 Порада: Використовуйте календар для планування."
+                                   Opacity="0.7"/>
+
+                    </StackPanel>
+              
+
+            </Grid>
+
+            <!-- 🔵 КОНТЕНТ СТОРІНОК -->
+            <ContentControl x:Name="ContentArea"/>
+
+        </Grid>
+
+            <!-- 🚗 ДЕКОР -->
+            <Image Source="avares://Logistics/Assets/cars.png"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,20,20"
+                   Width="220"
+                   Opacity="0.15"
+                   IsHitTestVisible="False"/>
+    </Grid>
+
+        <!-- КОНТЕНТ -->
+      
+
+</UserControl>

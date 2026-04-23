@@ -1,0 +1,14 @@
+[
+  {
+    "login": "\u0444\u0456\u0432\u0430\u043F\u0440\u043E\u043B\u0434\u0436\u0454",
+    "password": "$2a$11$WdwGRWuh6gT1jHhEE9HktOZL0.BddQc18VBonbIlCH50kRK.TwP7K",
+    "role": "Logist",
+    "phone": "\u002B380 (23) 456-78"
+  },
+  {
+    "login": "123",
+    "password": "$2a$11$WrPOOkbx1DG.v/R47kSrpOYq4VGedvFeaIM0xKpsFn1RO4q/2DuRi",
+    "role": "Driver",
+    "phone": "\u002B380 (23) 123-12-31"
+  }
+]

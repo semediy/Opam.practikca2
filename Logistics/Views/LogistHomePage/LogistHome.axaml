@@ -1,0 +1,59 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.LogistHomePage.LogistHome">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ЛІВА ПАНЕЛЬ -->
+        <StackPanel Grid.Column="0" Spacing="10" Margin="10">
+
+            <Button Click="OpenTransport" Content="🚦 Перевезення"/>
+            <Button Classes="green" Click="OpenDrivers" Content="👨 Водії"/>
+            <Button Click="OpenRoutes" Content="🗺️ Маршрути"/>
+            <Button Classes="green" Click="OpenVehicles" Content="🚚 Авто"/>
+            <Button Click="OpenCalendar" Content="📅 Календар"/>
+            <Button Classes="green" Click="OpenContact" Content="📞 Контакти"/>
+            <Button  Click="OpenSettings" Content="⚙️ Налаштування"/>
+            <Button Classes="green" Content="🔙 Назад" Click="GoBack"/>
+        </StackPanel>
+
+        <!-- ПРАВА ЧАСТИНА -->
+        <Grid Grid.Column="1">
+
+            <!-- ГОЛОВНИЙ КОНТЕНТ -->
+            <Grid x:Name="MainContent">
+
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Spacing="20">
+
+                    <TextBlock Text="🚚 Панель логіста"
+                               FontSize="26"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="Оберіть дію зліва"
+                               Opacity="0.7"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <!-- СТОРІНКИ -->
+            <ContentControl x:Name="ContentArea"/>
+
+            <!-- ДЕКОР -->
+            <Image Source="avares://Logistics/Assets/cars.png"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Width="200"
+                   Opacity="0.15"
+                   IsHitTestVisible="False"/>
+
+        </Grid>
+    </Grid>
+
+</UserControl>

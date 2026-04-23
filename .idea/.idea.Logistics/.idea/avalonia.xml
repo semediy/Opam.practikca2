@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Logistics/App.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/DriverHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/LoginPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/MainWindow.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/RegisterPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Colors.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Lang.en.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Lang.ua.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Language.ua.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Spacing.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/StatusRow.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Styles.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Templates.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Resources/Typography.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/StartPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/AdminHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/AdminHomePage/AdminHome.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/AdminHomePage/ChangePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Contact.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/ContactDrivers.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/DriverHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/DriverHomePage/AvailableRoutes.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/DriverHomePage/ContactLogist.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/DriverHomePage/DriverHome.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/DriverHomePage/DriverHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LoginPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/CalendarPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/DriversPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/LogistHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/RoutesPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/SettingsPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/TransportationsPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/Logist/VehiclesPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/AdminPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/CalendarPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/ContactDrivers.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/DriverHomePage/DriverHome.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/DriversPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/InternationalPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/LogistHome.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/LogistHomePage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/RoutesPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/SettingsPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/TransportationsPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/LogistHomePage/VehiclesPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/RegisterPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/StartPage.axaml" value="Logistics/Logistics.csproj" />
+        <entry key="Logistics/Views/UserHomePage/UserHome.axaml" value="Logistics/Logistics.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

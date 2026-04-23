@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.DriverHomePage.DriverHome">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ЛІВА ПАНЕЛЬ -->
+        <StackPanel Grid.Column="0" Spacing="10" Margin="10">
+
+            <Button Click="OpenCalendar" Content="📅 Календар"/>
+            <Button Classes="green" Click="OpenRoutes" Content="🗺️ Маршрути"/>
+            <Button Click="OpenContact" Content="📞 Контакти"/>
+            <Button  Classes="green" Content="🔙 Назад" Click="GoBack"/>
+        </StackPanel>
+
+        <!-- ПРАВА ЧАСТИНА -->
+        <Grid Grid.Column="1">
+
+            <Grid x:Name="MainContent">
+
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+
+                    <TextBlock Text="🚚 Панель водія"
+                               FontSize="24"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="Ваш рейс, авто та маршрут"
+                               Opacity="0.7"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <ContentControl x:Name="ContentArea"/>
+
+        </Grid>
+    </Grid>
+
+</UserControl>

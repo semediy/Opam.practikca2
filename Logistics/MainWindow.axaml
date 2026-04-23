@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Logistics.MainWindow"
+        Title="Logistics System"
+        Width="1200"
+        Height="700"
+        MinWidth="900"
+        MinHeight="600">
+    
+
+    <Grid>
+      
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        
+
+        <Border Background="#4F46E5">
+
+            <TextBlock Text="LOGISTICS SYSTEM"
+                       Foreground="White"
+                       FontSize="22"
+                       VerticalAlignment="Center"
+                       Margin="20"/>
+
+        </Border>
+
+        
+
+        <ContentControl x:Name="MainFrame"
+                        Grid.Row="1"/>
+
+        
+
+        <Border Grid.Row="2"
+                Background="#E5E7EB">
+
+            <TextBlock Text="Система готова до роботи"
+                       Margin="7"/>
+
+        </Border>
+
+    </Grid>
+
+</Window>

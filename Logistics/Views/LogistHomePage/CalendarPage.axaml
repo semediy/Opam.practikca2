@@ -1,0 +1,104 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Logistics.Views.LogistHomePage.CalendarPage">
+
+    <Grid Margin="30" ColumnDefinitions="2*,3*">
+
+        <!-- 🔵 ЛІВА ЧАСТИНА (КАЛЕНДАР) -->
+        <Border Background="#f1f5f9"
+                CornerRadius="20"
+                Padding="20"
+                Margin="10">
+
+            <StackPanel Spacing="15">
+
+                <TextBlock Text="📅 Планування рейсу"
+                           FontSize="20"
+                           FontWeight="Bold"/>
+
+                <DatePicker SelectedDate="{Binding SelectedDate, Mode=TwoWay}"
+                            SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+
+                <TextBlock Text="Обрана дата:"
+                           Opacity="0.6"/>
+
+                <TextBlock Text="{Binding SelectedDate}"
+                           FontSize="16"
+                           FontWeight="SemiBold"/>
+
+            </StackPanel>
+        </Border>
+
+        <!-- 🟢 ПРАВА ЧАСТИНА (ФОРМА) -->
+        <Border Grid.Column="1"
+                Background="#ffffff"
+                CornerRadius="20"
+                Padding="25"
+                Margin="10"
+                BoxShadow="0 5 20 #00000020">
+
+            <StackPanel Spacing="12">
+
+                <TextBlock Text="🚚 Деталі перевезення"
+                           FontSize="20"
+                           FontWeight="Bold"/>
+
+                <!-- ЧАС -->
+                <TextBlock Text="Час" Opacity="0.6"/>
+                <TimePicker SelectedTime="{Binding SelectedTime, Mode=TwoWay}"/>
+
+                <!-- МАРШРУТ -->
+                <TextBlock Text="Маршрут" Opacity="0.6"/>
+                <TextBox Text="{Binding Route, Mode=TwoWay}"
+                         Watermark="Наприклад: Київ → Львів"/>
+
+                <!-- ВОДІЙ -->
+                <TextBlock Text="Водій" Opacity="0.6"/>
+                <TextBox Text="{Binding Driver, Mode=TwoWay}"
+                         Watermark="Ім’я водія"/>
+
+                <!-- ПРИМІТКА -->
+                <TextBlock Text="Примітка" Opacity="0.6"/>
+                <TextBox Text="{Binding Note, Mode=TwoWay}"
+                         AcceptsReturn="True"
+                         Height="80"
+                         Watermark="Додаткова інформація..."/>
+
+                <!-- КНОПКА -->
+                <Button Content="Зберегти"
+                        Click="SaveTransport"
+                        Background="#22c55e"
+                        Foreground="White"
+                        CornerRadius="15"
+                        Padding="10"
+                        HorizontalAlignment="Left">
+
+                    <!-- ✨ Hover анімація -->
+                    <Button.Styles>
+                        <Style Selector="Button:pointerover">
+                            <Setter Property="Opacity" Value="0.85"/>
+                        </Style>
+                    </Button.Styles>
+
+                </Button>
+
+                <!-- СТАТУС -->
+                <TextBlock x:Name="StatusText"
+                           Foreground="#ef4444"
+                           FontWeight="SemiBold"/>
+
+            </StackPanel>
+        </Border>
+
+        <!-- 🚗 ДЕКОР -->
+        <Image Source="avares://Logistics/Assets/cars.png"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               Margin="0,0,10,10"
+               Width="180"
+               Opacity="0.15"
+               IsHitTestVisible="False"/>
+
+    </Grid>
+</UserControl>

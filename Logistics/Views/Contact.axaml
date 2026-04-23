@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Logistics.Views.Contact"
+     >
+    <Grid Margin="20">
+
+        <TabControl>
+
+            <!-- ВОДІЇ -->
+            <TabItem Header="🚚 Водії">
+                <StackPanel Margin="10" Spacing="8">
+                    <TextBlock Text="Іван Петренко - +380000000001"/>
+                    <TextBlock Text="Олег Коваль - +380000000002"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- ЛОГІСТИ -->
+            <TabItem Header="📦 Логісти">
+                <StackPanel Margin="10" Spacing="8">
+                    <TextBlock Text="Марія Іваненко - +380000000010"/>
+                    <TextBlock Text="Світлана Бондар - +380000000011"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- АДМІН -->
+            <TabItem Header="👨‍💼 Адміністратор">
+                <StackPanel Margin="10" Spacing="8">
+                    <TextBlock Text="Адміністратор"/>
+                    <TextBlock Text="+380000000999"/>
+                    <TextBlock Text="admin@logistics.com"/>
+                </StackPanel>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</UserControl>

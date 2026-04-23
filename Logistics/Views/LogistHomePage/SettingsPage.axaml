@@ -1,0 +1,99 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.LogistHomePage.SettingsPage">
+
+    <Grid Margin="30">
+
+        <!-- ОСНОВНА КАРТОЧКА -->
+        <Border 
+                CornerRadius="20"
+                Padding="25"
+                BoxShadow="0 5 20 #00000020">
+
+            <StackPanel Spacing="20">
+
+                <!-- 🔷 ЗАГОЛОВОК -->
+                <TextBlock Text="⚙️ Налаштування"
+                           FontSize="22"
+                           FontWeight="Bold"/>
+
+                <TextBlock Text="Оберіть тему інтерфейсу"
+                           Opacity="0.6"/>
+
+                <!-- 🔘 ВИБІР ТЕМИ -->
+                <StackPanel Orientation="Horizontal"
+                            Spacing="15">
+
+                    <!-- ТЕМНА -->
+                    <Button Click="DarkClick"
+                            Background="#1e293b"
+                            Foreground="White"
+                            CornerRadius="15"
+                            Padding="15"
+                            Width="150">
+
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="🌙"
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Темна"
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
+
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover">
+                                <Setter Property="Opacity" Value="0.85"/>
+                            </Style>
+                        </Button.Styles>
+                    </Button>
+
+                    <!-- СВІТЛА -->
+                    <Button Click="LightClick"
+                            Background="#f1f5f9"
+                            Foreground="Black"
+                            CornerRadius="15"
+                            Padding="15"
+                            Width="150">
+
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="☀️"
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Світла"
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
+
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover">
+                                <Setter Property="Opacity" Value="0.85"/>
+                            </Style>
+                        </Button.Styles>
+                    </Button>
+
+                </StackPanel>
+
+                <!-- 📌 ДОДАТКОВИЙ БЛОК -->
+                <Border 
+                        CornerRadius="15"
+                        Padding="15">
+
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="💡 Порада"
+                                   FontWeight="Bold"/>
+                        <TextBlock Text="Темна тема зменшує навантаження на очі вночі."
+                                   TextWrapping="Wrap"
+                                   Opacity="0.7"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </Border>
+        
+        
+    
+     
+
+       
+
+    </Grid>
+</UserControl>

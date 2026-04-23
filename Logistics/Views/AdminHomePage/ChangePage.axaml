@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Logistics.Views.AdminHomePage.ChangePage">
+        <Grid Margin="20">
+
+                <TabControl>
+
+                        <!-- ВОДІЇ -->
+                        <TabItem Header="🚚 Водії">
+                                <Grid RowDefinitions="Auto,*" Margin="10">
+
+                                        <!-- КНОПКИ -->
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                                <Button Content="+ Додати" Click="AddDriver"/>
+                                                <Button Content="- Видалити" Click="RemoveDriver"/>
+                                        </StackPanel>
+
+                                        <!-- СПИСОК -->
+                                        <ListBox x:Name="DriversList"
+                                                 Grid.Row="1"
+                                                 Margin="0,10,0,0"/>
+                                </Grid>
+                        </TabItem>
+
+                        <!-- ЛОГІСТИ -->
+                        <TabItem Header="📦 Логісти">
+                                <Grid RowDefinitions="Auto,*" Margin="10">
+
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                                <Button Content="+ Додати" Click="AddLogist"/>
+                                                <Button Content="- Видалити" Click="RemoveLogist"/>
+                                        </StackPanel>
+
+                                        <ListBox x:Name="LogistsList"
+                                                 Grid.Row="1"
+                                                 Margin="0,10,0,0"/>
+                                </Grid>
+                        </TabItem>
+
+                </TabControl>
+
+        </Grid>
+</UserControl>

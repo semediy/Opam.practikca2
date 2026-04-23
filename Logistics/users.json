@@ -1,0 +1,38 @@
+[
+  {
+    "login": "admin",
+    "password": "$2a$11$8K1p/a0d1GVMEqbx6V4o5.3hvqJ1L.cO3N9P6V4J0sqeLP10IM2",
+    "role": "Admin",
+    "phone": "+380 (12) 345-67-89"
+  },
+  {
+    "login": "Самойлюк Оксана Юріївна",
+    "password": "$2a$11$YvZwEWmnCrrQmS.DAsvct.EhPFN2PbVWZ7pO.T09qU4sqeLP10IM2",
+    "role": "Logist",
+    "phone": "+380 (56) 789-09-87"
+  },
+  {
+    "login": "Мельник Степан Володимирович",
+    "password": "$2a$11$W8YHNPMheqYcQ6Rq50ID2eWybYbqrc8aOkimLDeyVXA5eRWKVJn2G",
+    "role": "Logist",
+    "phone": "+380 (09) 865-43-45"
+  },
+  {
+    "login": "Глеба Віктор Іванович",
+    "password": "$2a$11$QXEbp79Xng4ph5pKH.iUcuerk2AVqbDujovW1ew6Uk9n/owCNAWxy",
+    "role": "Driver",
+    "phone": "+380 (76) 543-45-67"
+  },
+  {
+    "login": "Балог Віталій Олександрович",
+    "password": "$2a$11$a5queUZev04aaemYofWeOeJyb/3V/ScwL6EAJRwhnLTeuu5vy54Uu",
+    "role": "Logist",
+    "phone": "+380 (09) 645-67-89"
+  },
+  {
+    "login": "Кравчук Олександр Васильович",
+    "password": "$2a$11$DXJ/EIJA.iPLvSOMFYgfoe3Ua9AnDSdXcdQ6ga4swpgjn2aGh0lHC",
+    "role": "Driver",
+    "phone": "+380 (23) 456-78-99"
+  }
+]

@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Resources.StatusRow">
+
+   
+    <Grid ColumnDefinitions="3*,2*,2*,2*,1*,1*" Margin="0,4">
+
+        <TextBlock Text="{Binding Col1}" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Text="{Binding Col2}" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="2" Text="{Binding Col3}" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="3" Text="{Binding Col4}" VerticalAlignment="Center"/>
+
+        <RadioButton Grid.Column="4"
+                     HorizontalAlignment="Center"
+                     GroupName="{Binding Group}"/>
+
+        <RadioButton Grid.Column="5"
+                     HorizontalAlignment="Center"
+                     GroupName="{Binding Group}"/>
+
+    </Grid>
+</UserControl>

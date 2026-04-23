@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Logistics.Views.StartPage">
+
+    <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Spacing="20">
+
+        <TextBlock Text="LOGISTICS"
+                   FontSize="36"/>
+
+        <Button Classes="gradient" Content="Увійти"
+                Width="200"
+                Click="OpenLogin"/>
+
+        <Button Classes="gradient" Content="Зареєструватися"
+                Width="200"
+                Click="OpenRegister"/>
+
+    </StackPanel>
+
+</UserControl>
